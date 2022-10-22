@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class Division {
-        static Scanner scan=new Scanner(System.in); 
+         static Scanner scan=new Scanner(System.in); 
 
         public static void main(String[] args)
         {

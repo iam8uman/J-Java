@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 
 import javax.swing.*;
@@ -13,18 +14,19 @@ class Background implements ActionListener{
         f.setSize(400,500); 
 
         black=new JButton("Balck"); 
-        black.setBounds(150,50,50,20);
-
+        
         red=new JButton("Red"); 
-        red.setBounds(150,100,50,20);
-
+        
         blue=new JButton("Blue"); 
-        blue.setBounds(150,150,50,20);
+
+        // black.setBounds(150,50,50,20);
+        // red.setBounds(150,100,50,20);
+        // blue.setBounds(150,150,50,20);
 
         f.add(black);    f.add(blue);   f.add(red); 
 
         f.setVisible(true);
-        f.setLayout(null);
+        f.setLayout(new FlowLayout(FlowLayout.CENTER));
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         black.addActionListener(this);   
